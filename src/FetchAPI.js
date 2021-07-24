@@ -5,7 +5,7 @@ function FetchAPI() {
 
     const [items, setItems] = useState([]);
     const [filterItems, setFilterItems] = useState(items)
-console.log(window.innerWidth)
+    console.log(window.innerWidth)
     useEffect(() => {
         fetch(`https://jsonplaceholder.typicode.com/users`)
         .then(response => response.json())
@@ -20,11 +20,13 @@ console.log(window.innerWidth)
 
     const handleSearch = (e) => {
         let value = e.target.value;
+        let a = value.toUpperCase();
+        console.log(a);
         let result = [];
         console.log(value);
         result = items.filter((data) => {
             // return data.name.search(value) != -1;
-            return ( data.name.search(value) && data.username.search(value)) != -1
+            return (data.name.search(value) && data.username.search(value)) !== -1
         });
 
         setFilterItems(result);
@@ -43,7 +45,7 @@ console.log(window.innerWidth)
                     <tr>
                         <th scope="col">Name</th>
                         <th scope="col">Phone</th>
-                        <th scope="col">Email</th>
+                        <th scope="col" className='email'>Email</th>
                         <th scope="col" className='username'>Username</th>
                     </tr>
                 </thead>
@@ -53,7 +55,7 @@ console.log(window.innerWidth)
                             <tr key={item.id}>
                                 <td>{item.name}</td>
                                 <td>{item.phone}</td>
-                                <td>{item.email}</td>
+                                <td className="email">{item.email}</td>
 
                                 <td className="username">{item.username}</td>
                             </tr>
