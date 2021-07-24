@@ -1,0 +1,76 @@
+html,
+body {
+  background:  url('img/bg.jpg') no-repeat center center/cover;;
+  height: 200vh;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: relative;
+  top: 20px;
+  z-index: 999;
+  width: 100%;
+  padding: 1rem 0 8rem 0;
+}
+
+.navbar>h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.table {
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 25px;
+  margin-top: 40px;
+}
+
+td {
+  font-size: 1.75rem;
+  font-family: 'Montserrat', sans-serif;
+  height: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  td {
+    font-size: 1.25rem;
+  }
+}
+
+th {
+  font-size: 1.75rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 910px) {
+  .username {
+    display: none;
+  }
+}
+
+.search {
+  height: 100px;
+  display: block;
+  padding: 2rem;
+  font-size: 40px;
+  border: 0;
+  border-radius: 5px;
+  width: 60%;
+  margin: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .search {
+    display: none;
+    visibility: none;
+  }
+}
