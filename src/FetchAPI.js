@@ -20,23 +20,25 @@ function FetchAPI() {
 
     const handleSearch = (e) => {
         let value = e.target.value;
-        let a = value.toUpperCase();
-        console.log(a);
+        let a = value.toLowerCase();
+        let b = value.toUpperCase();
+        // console.log(a);
         let result = [];
-        console.log(value);
+        // console.log(value);
         result = items.filter((data) => {
             // return data.name.search(value) != -1;
             return (data.name.search(value) && data.username.search(value)) !== -1
         });
 
+
         setFilterItems(result);
-        console.log(result)
+        // console.log(result)
     }
 
     return (
         <div>
             <div>
-                <input type="text" className="search" placeholder="Case Sensitive Name/Username Search"
+                <input type="text" className="search" placeholder="Search Name/Username"
                  onChange={(e) =>handleSearch(e)} />
             </div>           
             <div class="table">
