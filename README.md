@@ -1,3 +1,8 @@
+# Preview 
+
+<img width="1012" alt="P1" src="https://user-images.githubusercontent.com/41958847/168961012-ebd10b8e-e4e0-4059-9c95-0979f94c1390.png">
+
+
 # How to run 
 
 1. Clone this project with git.
