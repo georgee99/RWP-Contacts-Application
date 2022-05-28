@@ -1,3 +1,6 @@
+# About
+This project fetches data from the JSON Placeholders API, and renders it into a table.
+
 # How to run 
 
 1. Clone this project with git.
